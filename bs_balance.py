@@ -16,8 +16,6 @@ if __name__ == '__main__':
     browser = webdriver.Firefox()
     # Load page with the login form.
     browser.get('https://www.berliner-sparkasse.de/')
-    # Wait 2 seconds for all elements to load
-    time.sleep(2)
     # Find login form by xpath and save it to variable
     login_form = browser.find_element_by_xpath("//form[1]")
     # Input login from user settings
