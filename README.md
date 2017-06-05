@@ -24,6 +24,5 @@ If you are getting geckdriver related errors when starting the script, follow th
 
 #### On Windows:
 `setx path "%path%;path\to\dir\with\geckodriver\;"`
-Restart your Windows machine for the changes to take effect.
 
-For more information check [this post](https://stackoverflow.com/a/40208762).
+*You need to restart your Windows machine after that.*
