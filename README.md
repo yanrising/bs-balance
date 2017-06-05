@@ -7,15 +7,15 @@ A quick script to check your account balance in Berliner Sparkasse using Seleniu
 * Firefox
 
 ## Usage
-Specify `LOGIN` and `PIN' values in `# User settings` section of `bs_balance.py`.
+Specify `LOGIN` and `PIN` values in `# User settings` section of `bs_balance.py`.
 
 
 ## Troubleshooting
 
 ### geckodriver
-If you are getting geckdriver related errors when starting the script, follow these steps:
+If you are getting geckodriver related errors when starting the script, follow these steps:
 
-1. [Download latest geckdriver for your OS](https://github.com/mozilla/geckodriver/releases) and extract the executable somewhere in your system.
+1. [Download latest geckodriver for your OS](https://github.com/mozilla/geckodriver/releases) and extract the executable somewhere in your system.
 
 2. Update your system's PATH with geckodriver location.
 
