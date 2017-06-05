@@ -15,7 +15,7 @@ Specify `LOGIN` and `PIN' values in `# User settings` section of `bs_balance.py`
 ### geckodriver
 If you are getting geckdriver related errors when starting the script, follow these steps:
 
-1. [Download latest geckdriver for your OS] (https://github.com/mozilla/geckodriver/releases) and extract the executable somewhere in your system.
+1. [Download latest geckdriver for your OS](https://github.com/mozilla/geckodriver/releases) and extract the executable somewhere in your system.
 
 2. Update your system's PATH with geckodriver location.
 
@@ -23,7 +23,7 @@ If you are getting geckdriver related errors when starting the script, follow th
 `export PATH=$PATH:/path/to/dir/with/geckodriver/`
 
 #### On Windows:
-`setx path "%path%;path\to\dir\with\geckodriver\`
+`setx path "%path%;path\to\dir\with\geckodriver\;"`
 Restart your Windows machine for the changes to take effect.
 
-For more information check [this post] (https://stackoverflow.com/a/40208762).
+For more information check [this post](https://stackoverflow.com/a/40208762).
