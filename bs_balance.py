@@ -16,23 +16,23 @@ if __name__ == '__main__':
     browser = webdriver.Firefox()
     # Load page with the login form.
     browser.get('https://www.berliner-sparkasse.de/')
-    # Find login form by xpath and save it to variable
+    # Find login form by xpath and save it to variable.
     login_form = browser.find_element_by_xpath("//form[1]")
-    # Input login from user settings
+    # Send keys for LOGIN.
     login_form.send_keys(LOGIN)
-    # Press TAB to switch to PIN input
+    # Press TAB to switch to PIN input field.
     login_form.send_keys(Keys.TAB)
-    # Input PIN from user settings
+    # Send keys for PIN.
     login_form.send_keys(PIN)
-    # Press Enter to submit form
+    # Press Enter to submit form.
     login_form.send_keys(Keys.ENTER)
-    # Wait 2 seconds for all elements to load
+    # Wait 2 seconds for all elements to load.
     time.sleep(2)
-    # Find td element containing account balance
+    # Find td element containing account balance.
     balance_elem = browser.find_element_by_xpath('//table/tbody/tr[3]/td[2]')
-    # Extract text value from found element
+    # Extract text value from td element.
     balance = balance_elem.text
-    # Close browser window
+    # Close browser window.
     browser.close()
-    # Print result to console
+    # Print result to console.
     print('\nBalance:', balance, 'EUR\n')
